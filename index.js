@@ -102,7 +102,7 @@ function fetchTvShows() {
 // declared outside of function to be used in clickHandler.
 let movies = [];
 function fetchMovies() {
-    fetch('http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=28bcb8df3f4aae9a5610c4c7c1373262')
+    fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=28bcb8df3f4aae9a5610c4c7c1373262')
         .then(res => res.json())
         .then(res => {
             // declared outside of forEach to be used to call displayHeader()
