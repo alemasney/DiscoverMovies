@@ -66,7 +66,7 @@ TabLink.prototype.displayHeader = function() {
     }
 
 
-    fetch(`http://api.themoviedb.org/3/discover/${filter()}?sort_by=popularity.desc&api_key=28bcb8df3f4aae9a5610c4c7c1373262`)
+    fetch(`https://api.themoviedb.org/3/discover/${filter()}?sort_by=popularity.desc&api_key=28bcb8df3f4aae9a5610c4c7c1373262`)
         .then(res => res.json())
         .then(function(data) {
             //set background to random image using the random number function
@@ -79,7 +79,7 @@ TabLink.prototype.displayHeader = function() {
 // declared outside of function to be used in clickHandler.
 let tvShows = [];
 function fetchTvShows() {
-    fetch('http://api.themoviedb.org/3/discover/tv?sort_by=popularity.desc&api_key=28bcb8df3f4aae9a5610c4c7c1373262')
+    fetch('https://api.themoviedb.org/3/discover/tv?sort_by=popularity.desc&api_key=28bcb8df3f4aae9a5610c4c7c1373262')
         .then(res => res.json())
         .then(res => {
             // declared outside of forEach to be used to call displayHeader()
