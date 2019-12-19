@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(49, 49, 49);
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-container h3 {
+    color: rgb(255, 209, 209);
+}
+
+.card-container img {
+    width: 100%;
+    height: 400px;
+}
+
+.card-description {
+    overflow: scroll;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0.8;
+    width: 300px;
+    height: 400px;
+}
+
+.card-description p {
+    width: 290px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.overlay {
+        display: block;
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0, rgb(0, 0, 0) 80%);
+        height: 100%;
+        width: 100%;
+}
+
+.header-text {
+    position: relative;
+    color: rgb(255, 209, 209);
+    z-index: 1;
+}
+
+.header-text h1 {
+    padding-top: 300px;
+    font-size: 60px;
+}
+
+.header-text h3 {
+    font-size: 40px;
+}
+
+.link {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.link li:last-child {
+    margin-left: 50px;
+}
+
+.link li {
+    color: rgb(255, 209, 209);
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.link li:hover {
+    border-bottom: 2px solid rgb(255, 209, 209);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .link {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .link li {
+        text-align: center;
+    }
+    
+    .link li:last-child {
+        margin-left: 0;
+    }
+}
